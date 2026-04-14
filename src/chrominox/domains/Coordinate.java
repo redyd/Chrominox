@@ -60,10 +60,9 @@ public final class Coordinate {
 	public boolean equals(final Object obj) {
 		if (this == obj)
 			return true;
-		if (!(obj instanceof final Coordinate))
+		if (!(obj instanceof Coordinate other))
 			return false;
-		Coordinate other = (Coordinate) obj;
-		return Objects.equals(coordinates, other.coordinates);
+        return Objects.equals(coordinates, other.coordinates);
 	}
 
 	@Override
